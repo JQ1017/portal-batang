@@ -1,0 +1,12 @@
+services:
+  database:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: batangmabar123
+      MYSQL_DATABASE: batangmabar
+    volumes:
+      - ./mysql:/var/lib/mysql
+    networks:
+      - batangnetwork
+    ports:
+      - 3306:3306
