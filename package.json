@@ -1,8 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+        "dev": "npm-run-all --parallel serve vite",
+        "serve": "php artisan serve",
+        "build": "vite build",
+        "vite": "vite"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
